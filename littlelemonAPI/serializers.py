@@ -7,6 +7,8 @@ class MenuItemSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class ReservationItemSerializer(serializers.ModelSerializer):
+    user = serializers.ReadOnlyField(source="user.username")
+    
     class Meta:
         model = ReservationItem
         fields = '__all__'
