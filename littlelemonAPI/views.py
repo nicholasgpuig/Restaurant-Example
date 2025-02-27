@@ -31,3 +31,7 @@ class ReservationItemViewSet(generics.ListCreateAPIView):
     def get_queryset(self):
         queryset = ReservationItem.objects.filter(user=self.request.user)
         return queryset
+
+class SingleReservationItemViewSet(generics.RetrieveUpdateDestroyAPIView):
+    queryset = ReservationItem.objects.all()
+    serializer_class = ReservationItemSerializer
