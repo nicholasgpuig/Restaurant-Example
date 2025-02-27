@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'littlelemonAPI',
     'rest_framework',
+    'djoser',
 ]
 
 MIDDLEWARE = [
