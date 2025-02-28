@@ -30,6 +30,8 @@ class ReservationItemViewSet(generics.ListCreateAPIView):
 
     def get_queryset(self):
         queryset = ReservationItem.objects.filter(user=self.request.user)
+        if self.request.user.is_staff:
+            queryset = ReservationItem.objects.all()
         return queryset
 
 class SingleReservationItemViewSet(generics.RetrieveUpdateDestroyAPIView):
