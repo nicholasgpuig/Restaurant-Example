@@ -1,24 +1,20 @@
 {
-  "name": "littlelemon",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
+  "name": "restaurant-example",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --fix"
+    "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue": "^3.2.0",
+    "vue-router": "^4.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.20.0",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "eslint": "^9.20.1",
-    "eslint-plugin-vue": "^9.32.0",
-    "vite": "^6.1.0",
-    "vite-plugin-vue-devtools": "^7.7.2"
+    "vite": "^2.0.0",
+    "@vitejs/plugin-vue": "^1.2.0",
+    "tailwindcss": "^2.2.0",
+    "postcss": "^8.2.0",
+    "autoprefixer": "^10.2.0"
   }
 }
