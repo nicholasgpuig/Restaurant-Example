@@ -9,5 +9,5 @@ urlpatterns = [
     path('menu/<int:pk>/', views.SingleMenuItemViewSet.as_view()),
     path('menu/', views.MenuItemViewSet.as_view()),
     path('reservations/', views.ReservationItemViewSet.as_view()),
-    path('reservations/<int:pk>', views.SingleReservationItemViewSet.as_view()),
+    path('reservations/<int:pk>/', views.SingleReservationItemViewSet.as_view()),
 ]
